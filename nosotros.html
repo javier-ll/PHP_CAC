@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCabs</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body id="cuerpo">
+    <header id="navbar">
+        <img src="imagenes/logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+        <div class="otra">
+          <ul>
+              <li><button id="show-login">Iniciar sesión</button></li>
+              <li><button id="show-signup">Registrarse</button></li>
+          </ul>
+      </div>
+      
+      <!-- Modal para iniciar sesión -->
+      <div id="login-modal" class="modal">
+          <div class="modal-content">
+              <div class="close" id="close-login">&times;</div>
+              <div class="form">
+                  <h2>Iniciar sesión</h2>
+                  <div class="form-element">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" placeholder="Ingresa tu email">
+                  </div>
+                  <div class="form-element">
+                      <label for="contraseña">Contraseña</label>
+                      <input type="password" id="contraseña" placeholder="Ingresa la contraseña">
+                  </div>
+                  <div class="form-element">
+                      <button id="login-button">Ingresar</button>
+                  </div>
+                  <div class="form-element">
+                      <button id="signup-button">Registrarse</button>
+                  </div>
+                  <div class="form-element">
+                      <a href="#">¿Olvidaste tu contraseña?</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Modal para registrarse -->
+      <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <div class="close" id="close-signup">&times;</div>
+            <div class="form">
+                <h2>Registrarse</h2>
+                <div class="form-element">
+                  <label for="usuario">Nombre de usuario</label>
+                  <input type="text" id="usuario" placeholder="Ingresa nombre de usuario">
+              </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Ingresa tu email">
+                </div>
+                <div class="form-element">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" placeholder="Ingresa tu contraseña">
+                </div>
+                <div class="form-element">
+                    <button id="crear-button">Crear cuenta</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <script src="js/modales.js"></script>
+    </header>
+    <section id="nosotros">
+        <div class="container">
+            <div class="columna">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed metus urna. Nunc interdum iaculis venenatis. Aliquam placerat rhoncus ipsum ac luctus. Nunc posuere lacinia metus, vitae aliquam tellus vestibulum eget. In vitae egestas justo, sollicitudin lobortis est. Nulla consequat nisi sed finibus venenatis. Donec pellentesque massa consectetur magna convallis, vitae euismod sem ornare.</p>
+                <p>Morbi tempus, diam viverra tempus vestibulum, massa enim lacinia sapien, sit amet vestibulum dolor arcu id velit. Nam pulvinar vestibulum sagittis. Donec ornare pretium ex, sit amet auctor lorem lobortis in. Cras ullamcorper, mi eu lacinia aliquam, libero ligula convallis diam, a vestibulum arcu quam vitae diam. Cras tincidunt porttitor dui, non fringilla nibh. Nullam mollis ante gravida sapien suscipit, non scelerisque massa euismod. Fusce vehicula eleifend consectetur. Nullam imperdiet ligula nec convallis convallis. Nam cursus iaculis justo, sed tincidunt sapien fermentum id. Morbi massa tortor, maximus eget dolor et, accumsan consequat justo.</p>               
+                <p>Praesent quam felis, suscipit ut purus a, tincidunt lobortis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec bibendum libero dolor, sit amet dictum enim porttitor vitae. Proin finibus, sem vel feugiat ultricies, libero velit tincidunt urna, a posuere velit tortor at nulla. Donec elementum justo eu nibh faucibus, sed mattis orci auctor. In dapibus arcu nec tortor imperdiet, et auctor nisl venenatis. Donec congue libero odio. In leo erat, scelerisque eget volutpat nec, accumsan nec velit. Proin pellentesque vitae erat vel ultricies.</p>
+            </div>
+            <div class="columna">
+                <img src="imagenes/nosotros.jpg" alt="Nosotros"> 
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
