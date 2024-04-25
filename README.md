@@ -19,6 +19,7 @@ Por último tenemos la sección de negocios que, por medio de un botón, nos lle
 
 ## Problemas de responsividad
 
-Se presentaron una serie de problemas para hacer el diseño responsivo de la parte "Nosotros"
+Se presentaron una serie de problemas para hacer el diseño responsivo de la parte "Nosotros". En el diseño responsivo de esa sección no puede controlarse el ancho sobrante de la página cuando se muestran el texto y la imagen horizontalmente alineadas.
+
 Autor
-Javier Llano
+**Javier Llano**
