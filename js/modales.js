@@ -116,3 +116,22 @@ crearButton.addEventListener("click", function() {
         resetSignupForm();
     }
 });
+
+// Negocios
+function mostrarModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+  }
+  
+  // Cuando el usuario haga clic fuera de la ventana modal, esta se cerrará
+  window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  function cerrarModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+  }
