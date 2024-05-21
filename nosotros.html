@@ -28,29 +28,31 @@
       
       <!-- Modal para iniciar sesión -->
       <div id="login-modal" class="modal">
-          <div class="modal-content">
-              <div class="close" id="close-login">&times;</div>
-              <div class="form">
-                  <h2>Iniciar sesión</h2>
-                  <div class="form-element">
-                      <label for="email">Email</label>
-                      <input type="text" id="email" placeholder="Ingresa tu email">
-                  </div>
-                  <div class="form-element">
-                      <label for="contraseña">Contraseña</label>
-                      <input type="password" id="contraseña" placeholder="Ingresa la contraseña">
-                  </div>
-                  <div class="form-element">
-                      <button id="login-button">Ingresar</button>
-                  </div>
-                  <div class="form-element">
-                      <button id="signup-button">Registrarse</button>
-                  </div>
-                  <div class="form-element">
-                      <a href="#">¿Olvidaste tu contraseña?</a>
-                  </div>
-              </div>
-          </div>
+        <div class="modal-content">
+            <div class="close" id="close-login">&times;</div>
+            <div class="form">
+                <h2>Iniciar sesión</h2>
+                <div class="form-element">
+                    <label for="login-email">Email</label>
+                    <input type="text" id="login-email" placeholder="Ingresa tu email">
+                    <div class="invalid-feedback" id="login-email-warning">Es necesario completar este campo con un email válido.</div>
+                </div>
+                <div class="form-element">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" placeholder="Ingresa la contraseña">
+                    <div class="invalid-feedback" id="login-password-warning">Es necesario completar este campo.</div>
+                </div>
+                <div class="form-element">
+                    <button id="login-button">Ingresar</button>
+                </div>
+                <div class="form-element">
+                    <button id="signup-button">Registrarse</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+        </div>
       </div>
       <!-- Modal para registrarse -->
       <div id="signup-modal" class="modal">
@@ -59,16 +61,19 @@
             <div class="form">
                 <h2>Registrarse</h2>
                 <div class="form-element">
-                  <label for="usuario">Nombre de usuario</label>
-                  <input type="text" id="usuario" placeholder="Ingresa nombre de usuario">
-              </div>
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Ingresa tu email">
+                    <label for="signup-username">Nombre de usuario</label>
+                    <input type="text" id="signup-username" placeholder="Ingresa nombre de usuario">
+                    <div class="invalid-feedback" id="signup-username-warning">Es necesario completar este campo.</div>
                 </div>
                 <div class="form-element">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" id="contraseña" placeholder="Ingresa tu contraseña">
+                    <label for="signup-email">Email</label>
+                    <input type="text" id="signup-email" placeholder="Ingresa tu email">
+                    <div class="invalid-feedback" id="signup-email-warning">Es necesario completar este campo con un email válido.</div>
+                </div>
+                <div class="form-element">
+                    <label for="signup-password">Contraseña</label>
+                    <input type="password" id="signup-password" placeholder="Ingresa tu contraseña">
+                    <div class="invalid-feedback" id="signup-password-warning">Es necesario completar este campo.</div>
                 </div>
                 <div class="form-element">
                     <button id="crear-button">Crear cuenta</button>

@@ -83,6 +83,10 @@
     color: black;
     border-radius: 17px;
 }
+.warning {
+    color: red;
+    display: none;
+}
 #solicitud{
     height: 500px;
     margin-top: 30px;
