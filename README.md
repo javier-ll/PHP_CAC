@@ -7,9 +7,10 @@ El objetivo principal de este proyecto era crear un sitio web interactivo y func
 ## Características principales
 
 - ___Página de inicio___: Presenta un header con la sección Inicio y Nosotros, también dos botones que abren ventanas modales para iniciar sesión y registrarse respectivamente.
-Debajo tenemos dos inputs para ingresar la ubicación actual y el destino.
+Debajo tenemos dos inputs para ingresar la ubicación actual y el destino. Por último tiene una sección de negocios para completar un formulario y un footer con las redes sociales de la empresa.
 Por último tenemos la sección de negocios que, por medio de un botón, nos lleva a un formulario de contacto; y el footer con los vínculos a las distintas redes sociales de la empresa.
 - ___Página de nosotros___: Habla sobre la empresa y muestra cuál es su visión y misión.
+- ___Página de conexión de API___: Se muestran los datos recopilados por medio del formulario de la sección Negocios, este formulario está vinculado a una API que recopila datos en una hoja de cálculo de Google.
 
 ## Tecnologías utilizadas
 
