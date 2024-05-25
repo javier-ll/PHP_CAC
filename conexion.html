@@ -63,7 +63,7 @@
                 <h2>Registrarse</h2>
                 <div class="form-element">
                     <label for="signup-username">Nombre de usuario</label>
-                    <input type="text" id="signup-username" placeholder="Ingresa nombre de usuario">
+                    <input type="text" id="signup-username" placeholder="Ingresa nombre de usuario" required>
                     <div class="invalid-feedback" id="signup-username-warning">Es necesario completar este campo.</div>
                 </div>
                 <div class="form-element">
@@ -85,17 +85,27 @@
       
       <script src="js/modales.js"></script>
     </header>
-    <section id="nosotros">
+    <section id="conexion">
         <div class="container">
-            <div class="columna">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed metus urna. Nunc interdum iaculis venenatis. Aliquam placerat rhoncus ipsum ac luctus. Nunc posuere lacinia metus, vitae aliquam tellus vestibulum eget. In vitae egestas justo, sollicitudin lobortis est. Nulla consequat nisi sed finibus venenatis. Donec pellentesque massa consectetur magna convallis, vitae euismod sem ornare.</p>
-                <p>Morbi tempus, diam viverra tempus vestibulum, massa enim lacinia sapien, sit amet vestibulum dolor arcu id velit. Nam pulvinar vestibulum sagittis. Donec ornare pretium ex, sit amet auctor lorem lobortis in. Cras ullamcorper, mi eu lacinia aliquam, libero ligula convallis diam, a vestibulum arcu quam vitae diam. Cras tincidunt porttitor dui, non fringilla nibh. Nullam mollis ante gravida sapien suscipit, non scelerisque massa euismod. Fusce vehicula eleifend consectetur. Nullam imperdiet ligula nec convallis convallis. Nam cursus iaculis justo, sed tincidunt sapien fermentum id. Morbi massa tortor, maximus eget dolor et, accumsan consequat justo.</p>               
-                <p>Praesent quam felis, suscipit ut purus a, tincidunt lobortis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec bibendum libero dolor, sit amet dictum enim porttitor vitae. Proin finibus, sem vel feugiat ultricies, libero velit tincidunt urna, a posuere velit tortor at nulla. Donec elementum justo eu nibh faucibus, sed mattis orci auctor. In dapibus arcu nec tortor imperdiet, et auctor nisl venenatis. Donec congue libero odio. In leo erat, scelerisque eget volutpat nec, accumsan nec velit. Proin pellentesque vitae erat vel ultricies.</p>
+            <h1>Registros de la API</h1>
+            <div id="registros" class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la empresa</th>
+                            <th>Representante</th>
+                            <th>Correo electrónico</th>
+                            <th>Ciudad</th>
+                            <th>Teléfono</th>
+                            <th>Consulta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registros-body">
+                        <!-- Aquí se insertarán los registros -->
+                    </tbody>
+                </table>
             </div>
-            <div class="columna">
-                <img src="imagenes/nosotros.jpg" alt="Nosotros"> 
-            </div>
+        </div>
     </section>
 
     <footer>
@@ -109,5 +119,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/api-form.js"></script>
 </body>
 </html>
